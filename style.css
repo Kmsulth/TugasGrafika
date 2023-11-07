@@ -1,0 +1,33 @@
+*,html, body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.flex{
+    justify-content: space-between; 
+    margin-top: 300px;
+    display: flex;
+
+}
+
+.animasi{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    animation-name: moving;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving
+{
+    0%{ background-color: red; left: 0px; top: 0px; }
+    25%{background-color: blue;left: 200px;top: 0px; }
+    55%{background-color: yellow;left: 200px;top: 200px; }
+    75%{background-color: green;left: 0px;top: 200px; }
+    100%{background-color: red;left: 0px;top: 0px; }
+    
+}
+
